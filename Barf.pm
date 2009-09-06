@@ -3,6 +3,7 @@ package IO::Barf;
 #------------------------------------------------------------------------------
 
 # Pragmas.
+use base qw(Exporter);
 use strict;
 use warnings;
 
