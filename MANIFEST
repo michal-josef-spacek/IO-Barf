@@ -1,0 +1,7 @@
+Barf.pm
+Makefile.PL
+MANIFEST
+t/IO::Barf/00_use.t
+t/IO::Barf/01_version.t
+t/IO::Barf/02_pod_coverage.t
+t/IO::Barf/03_pod.t
