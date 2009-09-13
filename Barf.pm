@@ -41,6 +41,11 @@ __END__
 
 IO::Barf - Barfing content to output file.
 
+=head1 SYNOPSIS
+
+ use IO::Barf qw(barf);
+ barf($file, 'CONTENT');
+
 =head1 SUBROUTINES
 
 =over 8
