@@ -64,7 +64,22 @@ IO::Barf - Barfing content to output file.
 
 =head1 EXAMPLE
 
- TODO
+ # Pragmas.
+ use strict;
+ use warnings;
+
+ # Module.
+ use IO::Barf qw(barf);
+
+ # Content.
+ my $content = "foo\nbar\n";
+
+ # Barf out.
+ barf('/tmp/foo', $content);
+
+ # cat /tmp/foo
+ # foo
+ # bar
 
 =head1 DEPENDENCIES
 
