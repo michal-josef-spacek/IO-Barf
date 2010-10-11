@@ -1,6 +1,7 @@
 # Modules.
 use Digest;
 use File::Object;
+use File::Spec;
 use File::Temp qw(tempfile);
 use IO::Barf qw(barf);
 use Perl6::Slurp qw(slurp);
@@ -19,7 +20,7 @@ sub test1 {
 
 	my $file = shift;
 	my $digest = Digest->new('SHA-256');
-	my $ex1 = $test_dir.'/'.$file;
+	my $ex1 = File::Spec->catfile($test_dir, $file);
 	open my $fh_ex1, '<', $ex1;
 	$digest->addfile($fh_ex1);
 	my $ret1 = $digest->hexdigest;
