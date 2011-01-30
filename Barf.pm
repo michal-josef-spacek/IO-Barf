@@ -59,8 +59,8 @@ IO::Barf - Barfing content to output file.
 =head1 ERRORS
 
  barf():
-   Cannot open file '%s'.
-   Cannot close file '%s'.
+         Cannot open file '%s'.
+         Cannot close file '%s'.
 
 =head1 EXAMPLE
 
