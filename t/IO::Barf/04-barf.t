@@ -13,11 +13,8 @@ my $test_dir = File::Object->new->up->file_path('data')->serialize;
 # Debug message.
 print "Testing: barf() subroutine.\n";
 
-#------------------------------------------------------------------------------
-sub test1 {
-#------------------------------------------------------------------------------
 # Test subroutine.
-
+sub test1 {
 	my $file = shift;
 	my $digest = Digest->new('SHA-256');
 	my $ex1 = File::Spec->catfile($test_dir, $file);

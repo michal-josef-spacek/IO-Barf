@@ -1,6 +1,4 @@
-#------------------------------------------------------------------------------
 package IO::Barf;
-#------------------------------------------------------------------------------
 
 # Pragmas.
 use base qw(Exporter);
@@ -17,11 +15,8 @@ Readonly::Array our @EXPORT_OK => qw(barf);
 # Version.
 our $VERSION = 0.01;
 
-#------------------------------------------------------------------------------
-sub barf {
-#------------------------------------------------------------------------------
 # Barf content to file.
-
+sub barf {
 	my ($file, $content) = @_;
 	open my $ouf, '>', $file or err "Cannot open file '$file'.";
 	print {$ouf} $content;
