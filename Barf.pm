@@ -6,7 +6,7 @@ use strict;
 use warnings;
 
 # Modules.
-use Error::Simple::Multiple qw(err);
+use Error::Pure qw(err);
 use Readonly;
 
 # Constants.
@@ -78,7 +78,7 @@ IO::Barf - Barfing content to output file.
 
 =head1 DEPENDENCIES
 
-L<Error::Simple::Multiple(3pm)>,
+L<Error::Pure(3pm)>,
 L<Readonly(3pm)>.
 
 =head1 SEE ALSO

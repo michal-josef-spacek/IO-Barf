@@ -5,7 +5,7 @@ use ExtUtils::MakeMaker;
 WriteMakefile(
 	'NAME' => 'IO::Barf',
 	'PREREQ_PM' => {
-		'Error::Simple::Multiple' => 0.05,
+		'Error::Pure' => 0.01,
 		'Readonly' => 0,
 	},
 	'VERSION' => 0.01,
