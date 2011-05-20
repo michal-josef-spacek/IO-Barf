@@ -8,7 +8,6 @@ WriteMakefile(
 		'Digest' => 0,
 		'English' => 0,
 		'File::Object' => 0,
-		'File::Spec' => 0,
 		'File::Temp' => 0,
 		'Perl6::Slurp' => 0,
 		'Test::More' => 0,
