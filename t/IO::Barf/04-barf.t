@@ -9,9 +9,6 @@ use Test::More 'tests' => 6;
 # Test data directory.
 my $test_dir = File::Object->new->up->dir('data');
 
-# Debug message.
-print "Testing: barf() subroutine.\n";
-
 # Test subroutine.
 sub test1 {
 	my $file = shift;
