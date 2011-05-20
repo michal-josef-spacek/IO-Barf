@@ -1,9 +1,10 @@
+# Pragmas.
+use strict;
+use warnings;
+
 # Modules.
 use IO::Barf;
 use Test::More 'tests' => 1;
 
-# Debug message.
-print "Testing: version.\n";
-
 # Test.
-is($IO::Barf::VERSION, '0.01');
+is($IO::Barf::VERSION, '0.01', 'Version.');
