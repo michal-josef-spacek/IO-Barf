@@ -7,7 +7,7 @@ use Perl6::Slurp qw(slurp);
 use Test::More 'tests' => 6;
 
 # Test data directory.
-my $test_dir = File::Object->new->up->file('data');
+my $test_dir = File::Object->new->up->dir('data');
 
 # Debug message.
 print "Testing: barf() subroutine.\n";
@@ -16,7 +16,7 @@ print "Testing: barf() subroutine.\n";
 sub test1 {
 	my $file = shift;
 	my $digest = Digest->new('SHA-256');
-	my $ex1 = $test_dir->file($file)->s);
+	my $ex1 = $test_dir->file($file)->s;
 	open my $fh_ex1, '<', $ex1;
 	$digest->addfile($fh_ex1);
 	my $ret1 = $digest->hexdigest;
