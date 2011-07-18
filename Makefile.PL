@@ -6,7 +6,7 @@ use warnings;
 use inc::Module::Install;
 
 # Definition.
-abstract 'TODO';
+abstract 'Barfing content to output file.';
 author 'Michal Špaček <skim@cpan.org>';
 license 'bsd';
 name 'IO-Barf';
