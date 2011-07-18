@@ -78,13 +78,13 @@ IO::Barf - Barfing content to output file.
 
 =head1 DEPENDENCIES
 
-L<Error::Pure(3pm)>,
-L<Exporter(3pm)>,
-L<Readonly(3pm)>.
+L<Error::Pure>,
+L<Exporter>,
+L<Readonly>.
 
 =head1 SEE ALSO
 
-L<Perl6::Slurp(3pm)>.
+L<Perl6::Slurp>.
 
 =head1 AUTHOR
 
