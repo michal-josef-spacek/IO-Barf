@@ -14,8 +14,8 @@ META.yml
 t/data/ex1.txt
 t/data/ex2.txt
 t/data/ex3.txt
-t/IO::Barf/00-use.t
-t/IO::Barf/01-version.t
-t/IO::Barf/02-pod_coverage.t
-t/IO::Barf/03-pod.t
-t/IO::Barf/04-barf.t
+t/IO-Barf/00-use.t
+t/IO-Barf/01-version.t
+t/IO-Barf/02-pod_coverage.t
+t/IO-Barf/03-pod.t
+t/IO-Barf/04-barf.t
