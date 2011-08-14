@@ -1,7 +1,9 @@
 TODO
 ====
 1. Predelat Perl6::Slurp na klasicky pristup, protoze v perlu 5.8.0 neni.
-2.
+2. Pridat moznost vystupu jako >>
+3. Pridat moznost vystupu jako handler.
+4.
 
 Applied
 =======
