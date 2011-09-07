@@ -84,7 +84,12 @@ L<Readonly>.
 
 =head1 SEE ALSO
 
+L<File::Slurp>,
 L<Perl6::Slurp>.
+
+=head1 REPOSITORY
+
+L<https://github.com/tupinek/IO-Barf>
 
 =head1 AUTHOR
 
