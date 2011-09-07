@@ -11,6 +11,7 @@ inc/Module/Install/WriteAll.pm
 Makefile.PL
 MANIFEST
 META.yml
+README
 t/data/ex1.txt
 t/data/ex2.txt
 t/data/ex3.txt
