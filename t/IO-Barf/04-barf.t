@@ -25,7 +25,7 @@ sub test1 {
 	$digest->add($data);
 	my $ret2 = $digest->hexdigest;
 	is($ret1, $ret2);
-	my (undef, $new_ex1) = tempfile('DIR' => '/tmp/');
+	my (undef, $new_ex1) = tempfile();
 	barf($new_ex1, $data);
 	open my $fh_new_ex1, '<', $new_ex1;
 	$digest->addfile($fh_new_ex1);
