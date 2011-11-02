@@ -7,7 +7,7 @@ use Digest;
 use File::Object;
 use File::Temp qw(tempfile);
 use IO::Barf qw(barf);
-use Perl6::Slurp qw(slurp);
+use File::Slurp qw(slurp);
 use Test::More 'tests' => 6;
 
 # Test data directory.
