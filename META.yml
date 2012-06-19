@@ -5,7 +5,7 @@ author:
 build_requires:
   Digest: 0
   English: 0
-  ExtUtils::MakeMaker: 6.42
+  ExtUtils::MakeMaker: 6.36
   File::Object: 0.01
   File::Slurp: 0
   File::Temp: 0
@@ -13,9 +13,10 @@ build_requires:
   Test::Pod: 0
   Test::Pod::Coverage: 0
 configure_requires:
-  ExtUtils::MakeMaker: 6.42
+  ExtUtils::MakeMaker: 6.36
 distribution_type: module
-generated_by: 'Module::Install version 1.01'
+dynamic_config: 1
+generated_by: 'Module::Install version 1.06'
 license: bsd
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -30,9 +31,8 @@ requires:
   Exporter: 0
   Readonly: 0
 resources:
+  bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=IO-Barf
+  homepage: https://github.com/tupinek/IO-Barf
   license: http://opensource.org/licenses/bsd-license.php
-  repository:
-    type: git
-    url: git://github.com/tupinek/IO-Barf
-    web: https://github.com/tupinek/IO-Barf
+  repository: git://github.com/tupinek/IO-Barf
 version: 0.01
