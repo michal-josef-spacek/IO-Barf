@@ -10,7 +10,7 @@ use Error::Pure qw(err);
 use Readonly;
 
 # Constants.
-Readonly::Array our @EXPORT_OK => qw(barf);
+Readonly::Array our @EXPORT => qw(barf);
 
 # Version.
 our $VERSION = 0.02;
@@ -65,7 +65,7 @@ IO::Barf - Barfing content to output file.
 
  # Module.
  use File::Temp qw(tempfile);
- use IO::Barf qw(barf);
+ use IO::Barf;
 
  # Content.
  my $content = "foo\nbar\n";
