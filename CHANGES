@@ -1,4 +1,4 @@
-0.02
+0.02 (August 5, 2012)
 - Change exporting of barf() from explicit to implicit exporting.
 - Fix doc example. Add unlink of temporary file.
 
