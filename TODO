@@ -6,7 +6,10 @@ Nevim, jestli plati, protoze jsem Perl6::Slurp predelal na File::Slurp.
 2. Pridat moznost vystupu jako >>
 3. Pridat moznost vystupu jako handler.
 4. Projit IO::Any, kde je podobna funkce IO::Any->spew();
-5.
+5. Hm, tak tenhle modul je asi minela, protoze rikaji ze se ma pouzivat
+   File::Slurp a jeho metoda pro zapis do souboru. Kazdopadne bych to mel asi
+   dopsat jako protejsek k Perl6::Slurp.
+6.
 
 Applied
 =======
