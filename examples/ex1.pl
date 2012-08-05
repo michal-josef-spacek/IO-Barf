@@ -6,7 +6,7 @@ use warnings;
 
 # Module.
 use File::Temp qw(tempfile);
-use IO::Barf qw(barf);
+use IO::Barf;
 
 # Content.
 my $content = "foo\nbar\n";
@@ -19,6 +19,9 @@ barf($temp_file, $content);
 
 # Print tempory file.
 system("cat $temp_file");
+
+# Unlink temporary file.
+unlink $temp_file;
 
 # Output:
 # foo

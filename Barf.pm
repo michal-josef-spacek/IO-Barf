@@ -79,6 +79,9 @@ IO::Barf - Barfing content to output file.
  # Print tempory file.
  system("cat $temp_file");
 
+ # Unlink temporary file.
+ unlink $temp_file;
+
  # Output:
  # foo
  # bar
