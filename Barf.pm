@@ -64,7 +64,7 @@ IO::Barf - Barfing content to output file.
  use warnings;
 
  # Module.
- use File::Temp qw(tempfile);
+ use File::Temp;
  use IO::Barf;
 
  # Content.
