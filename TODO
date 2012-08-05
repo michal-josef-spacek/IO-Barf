@@ -5,7 +5,8 @@ TODO
 Nevim, jestli plati, protoze jsem Perl6::Slurp predelal na File::Slurp.
 2. Pridat moznost vystupu jako >>
 3. Pridat moznost vystupu jako handler.
-4.
+4. Projit IO::Any, kde je podobna funkce IO::Any->spew();
+5.
 
 Applied
 =======
