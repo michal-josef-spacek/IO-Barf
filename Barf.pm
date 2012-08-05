@@ -91,6 +91,7 @@ L<Readonly>.
 
 =head1 SEE ALSO
 
+L<IO::Any>,
 L<File::Slurp>,
 L<Perl6::Slurp>.
 

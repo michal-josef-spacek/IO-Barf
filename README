@@ -43,7 +43,7 @@ DEPENDENCIES
     Error::Pure, Exporter, Readonly.
 
 SEE ALSO
-    File::Slurp, Perl6::Slurp.
+    IO::Any, File::Slurp, Perl6::Slurp.
 
 REPOSITORY
     <https://github.com/tupinek/IO-Barf>
