@@ -6,7 +6,7 @@ build_requires:
   Digest: 0
   English: 0
   ExtUtils::MakeMaker: 6.36
-  File::Object: 0.01
+  File::Object: 0.05
   File::Slurp: 0
   File::Temp: 0
   Test::More: 0
@@ -28,7 +28,7 @@ no_index:
     - inc
     - t
 requires:
-  Error::Pure: 0.01
+  Error::Pure: 0.08
   Exporter: 0
   Readonly: 0
 resources:

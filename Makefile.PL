@@ -10,7 +10,7 @@ abstract 'Barfing content to output file.';
 author 'Michal Špaček <skim@cpan.org>';
 license 'bsd';
 name 'IO-Barf';
-requires 'Error::Pure' => 0.01;
+requires 'Error::Pure' => 0.08;
 requires 'Exporter' => 0;
 requires 'Readonly' => 0;
 resources 'bugtracker' => 'https://rt.cpan.org/Public/Dist/Display.html'.
@@ -19,7 +19,7 @@ resources 'homepage' => 'https://github.com/tupinek/IO-Barf';
 resources 'repository' => 'git://github.com/tupinek/IO-Barf';
 test_requires 'Digest' => 0;
 test_requires 'English' => 0;
-test_requires 'File::Object' => 0.01;
+test_requires 'File::Object' => 0.05;
 test_requires 'File::Slurp' => 0;
 test_requires 'File::Temp' => 0;
 test_requires 'Test::More' => 0;
