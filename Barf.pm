@@ -13,7 +13,7 @@ use Readonly;
 Readonly::Array our @EXPORT => qw(barf);
 
 # Version.
-our $VERSION = 0.02;
+our $VERSION = 0.03;
 
 # Barf content to file.
 sub barf {
@@ -114,6 +114,6 @@ BSD license.
 
 =head1 VERSION
 
-0.02
+0.03
 
 =cut
