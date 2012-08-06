@@ -8,6 +8,7 @@ use warnings;
 # Modules.
 use Error::Pure qw(err);
 use Readonly;
+use UNIVERSAL qw(isa);
 
 # Constants.
 Readonly::Array our @EXPORT => qw(barf);
@@ -17,10 +18,21 @@ our $VERSION = 0.03;
 
 # Barf content to file.
 sub barf {
-	my ($file, $content) = @_;
-	open my $ouf, '>', $file or err "Cannot open file '$file'.";
-	print {$ouf} $content;
-	close $ouf or err "Cannot close file '$file'.";
+	my ($file_or_handler, $content) = @_;
+
+	# File.
+	my $ref = ref $file_or_handler;
+	if (! $ref) {
+		open my $ouf, '>', $file_or_handler
+			or err "Cannot open file '$file_or_handler'.";
+		print {$ouf} $content;
+		close $ouf or err "Cannot close file '$file_or_handler'.";
+
+	# Handler
+	} elsif ($ref eq 'GLOB' || isa($file_or_handler, 'IO::Handler')) {
+		print {$file_or_handler} $content;
+	}
+
 	return;
 }
 
@@ -39,15 +51,15 @@ IO::Barf - Barfing content to output file.
 =head1 SYNOPSIS
 
  use IO::Barf qw(barf);
- barf($file, 'CONTENT');
+ barf($file_or_handler, 'CONTENT');
 
 =head1 SUBROUTINES
 
 =over 8
 
-=item C<barf($file, $content)>
+=item C<barf($file_or_handler, $content)>
 
- Barf content to file.
+ Barf content to file or handler.
 
 =back
 
@@ -57,7 +69,7 @@ IO::Barf - Barfing content to output file.
          Cannot open file '%s'.
          Cannot close file '%s'.
 
-=head1 EXAMPLE
+=head1 EXAMPLE1
 
  # Pragmas.
  use strict;
@@ -81,6 +93,25 @@ IO::Barf - Barfing content to output file.
 
  # Unlink temporary file.
  unlink $temp_file;
+
+ # Output:
+ # foo
+ # bar
+
+=head1 EXAMPLE2
+
+ # Pragmas.
+ use strict;
+ use warnings;
+
+ # Module.
+ use IO::Barf;
+
+ # Content.
+ my $content = "foo\nbar\n";
+
+ # Barf out.
+ barf(\*STDOUT, $content);
 
  # Output:
  # foo

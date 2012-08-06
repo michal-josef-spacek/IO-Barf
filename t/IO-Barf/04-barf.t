@@ -6,6 +6,7 @@ use warnings;
 use Digest;
 use File::Object;
 use File::Temp qw(tempfile);
+use IO::Scalar;
 use IO::Barf qw(barf);
 use File::Slurp qw(slurp);
 use Test::More 'tests' => 6;
