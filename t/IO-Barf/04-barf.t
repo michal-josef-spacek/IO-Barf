@@ -4,12 +4,13 @@ use warnings;
 
 # Modules.
 use Digest;
+use Error::Pure qw(err);
 use File::Object;
 use File::Temp qw(tempfile);
-use IO::Scalar;
+use IO::File;
 use IO::Barf qw(barf);
 use File::Slurp qw(slurp);
-use Test::More 'tests' => 6;
+use Test::More 'tests' => 9;
 
 # Test data directory.
 my $test_dir = File::Object->new->up->dir('data');
@@ -17,38 +18,60 @@ my $test_dir = File::Object->new->up->dir('data');
 # Test subroutine for file.
 sub test1 {
 	my $file = shift;
-	my $digest = Digest->new('SHA-256');
-	my $ex1 = $test_dir->file($file)->s;
-	my $data = slurp($ex1);
-	$digest->add($data);
-	my $data_sha256 = $digest->hexdigest;
-	my (undef, $new_ex1) = tempfile();
-	barf($new_ex1, $data);
-	open my $fh_new_ex1, '<', $new_ex1;
-	$digest->addfile($fh_new_ex1);
-	my $barf_sha256 = $digest->hexdigest;
+	my $ex = $test_dir->file($file)->s;
+	my ($data, $data_sha256) = _data_digest($ex);
+	my (undef, $new_ex) = tempfile();
+	barf($new_ex, $data);
+	my $barf_sha256 = _digest_file($new_ex);
 	is($data_sha256, $barf_sha256);
-	unlink $new_ex1;
+	unlink $new_ex;
 	return;
 }
 
 # Test subroutine for handler.
 sub test2 {
 	my $file = shift;
-	my $digest = Digest->new('SHA-256');
-	my $ex1 = $test_dir->file($file)->s;
-	my $data = slurp($ex1);
-	$digest->add($data);
-	my $data_sha256 = $digest->hexdigest;
-	my ($new_ex1_fh, $new_ex1) = tempfile();
-	barf($new_ex1_fh, $data);
-	close $new_ex1_fh;
-	open my $fh_new_ex1, '<', $new_ex1;
-	$digest->addfile($fh_new_ex1);
-	my $barf_sha256 = $digest->hexdigest;
+	my $ex = $test_dir->file($file)->s;
+	my ($data, $data_sha256) = _data_digest($ex);
+	my ($new_ex_fh, $new_ex) = tempfile();
+	barf($new_ex_fh, $data);
+	close $new_ex_fh;
+	my $barf_sha256 = _digest_file($new_ex);
 	is($data_sha256, $barf_sha256);
-	unlink $new_ex1;
+	unlink $new_ex;
 	return;
+}
+
+# Test subroutine for IO::Handler.
+sub test3 {
+	my $file = shift;
+	my $ex = $test_dir->file($file)->s;
+	my ($data, $data_sha256) = _data_digest($ex);
+	my (undef, $new_ex) = tempfile();
+	my $new_ex_io = IO::File->new($new_ex, 'r');
+	barf($new_ex_io, $data);
+	$new_ex_io->close;
+	my $barf_sha256 = _digest_file($new_ex);
+	is($data_sha256, $barf_sha256);
+	unlink $new_ex;
+	return;
+}
+
+# Get data and SHA256 digest.
+sub _data_digest {
+	my $file = shift;
+	my $data = slurp($file);
+	my $data_sha256 = _digest_file($file);
+	return ($data, $data_sha256);
+}
+
+# Get digest of file.
+sub _digest_file {
+	my $file = shift;
+	open my $file_fh, '<', $file or err "Cannot open file '$file'.";
+	my $digest = Digest->new('SHA-256');
+	$digest->addfile($file_fh);
+	return $digest->hexdigest;
 }
 
 # Test.
@@ -68,3 +91,12 @@ test2('ex2.txt');
 
 # Test.
 test2('ex3.txt');
+
+# Test.
+test3('ex1.txt');
+
+# Test.
+test3('ex2.txt');
+
+# Test.
+test3('ex3.txt');
