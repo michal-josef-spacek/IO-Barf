@@ -48,7 +48,7 @@ sub test3 {
 	my $ex = $test_dir->file($file)->s;
 	my ($data, $data_sha256) = _data_digest($ex);
 	my (undef, $new_ex) = tempfile();
-	my $new_ex_io = IO::File->new($new_ex, 'r');
+	my $new_ex_io = IO::File->new($new_ex, 'w');
 	barf($new_ex_io, $data);
 	$new_ex_io->close;
 	my $barf_sha256 = _digest_file($new_ex);
