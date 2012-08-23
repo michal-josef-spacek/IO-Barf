@@ -14,7 +14,7 @@ use UNIVERSAL qw(isa);
 Readonly::Array our @EXPORT => qw(barf);
 
 # Version.
-our $VERSION = 0.03;
+our $VERSION = 0.04;
 
 # Barf content to file.
 sub barf {
@@ -197,6 +197,6 @@ BSD license.
 
 =head1 VERSION
 
-0.03
+0.04
 
 =cut

@@ -7,4 +7,4 @@ use IO::Barf;
 use Test::More 'tests' => 1;
 
 # Test.
-is($IO::Barf::VERSION, 0.03, 'Version.');
+is($IO::Barf::VERSION, 0.04, 'Version.');
