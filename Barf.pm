@@ -29,8 +29,16 @@ sub barf {
 		close $ouf or err "Cannot close file '$file_or_handler'.";
 
 	# Handler
-	} elsif ($ref eq 'GLOB' || isa($file_or_handler, 'IO::Handle')) {
+	} elsif ($ref eq 'GLOB') {
 		print {$file_or_handler} $content;
+
+	# IO::Handle.
+	} elsif (isa($file_or_handler, 'IO::Handle')) {
+		$file_or_handler->print($content);
+
+	# Other.
+	} else {
+		err "Unsupported object '$ref'.";
 	}
 
 	return;
@@ -68,6 +76,7 @@ IO::Barf - Barfing content to output file.
  barf():
          Cannot open file '%s'.
          Cannot close file '%s'.
+         Unsupported object '%s'.
 
 =head1 EXAMPLE1
 
