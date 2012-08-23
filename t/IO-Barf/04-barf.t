@@ -4,13 +4,14 @@ use warnings;
 
 # Modules.
 use Digest;
+use English qw(-no_match_vars);
 use Error::Pure qw(err);
 use File::Object;
 use File::Temp qw(tempfile);
 use IO::File;
 use IO::Barf qw(barf);
 use File::Slurp qw(slurp);
-use Test::More 'tests' => 9;
+use Test::More 'tests' => 10;
 
 # Test data directory.
 my $test_dir = File::Object->new->up->dir('data');
@@ -100,3 +101,9 @@ test3('ex2.txt');
 
 # Test.
 test3('ex3.txt');
+
+# Test.
+eval {
+	barf((bless {}, 'Foo::Bar'), 'FOOBAR');
+};
+is($EVAL_ERROR, "Unsupported object 'Foo::Bar'.\n", 'Unsupported object.');
