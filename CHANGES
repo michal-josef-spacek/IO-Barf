@@ -1,7 +1,8 @@
 0.03
 - Fix doc example.
 - Fix tests.
-- Implement output to handler.
+- Implement output to handler, IO::Handler.
+- Add error for unsupported objects to barf.
 
 0.02 (August 5, 2012)
 - Change exporting of barf() from explicit to implicit exporting.
