@@ -7,10 +7,10 @@ use Digest;
 use English qw(-no_match_vars);
 use Error::Pure qw(err);
 use File::Object;
+use File::Slurp qw(slurp);
 use File::Temp qw(tempfile);
 use IO::File;
 use IO::Barf qw(barf);
-use File::Slurp qw(slurp);
 use Test::More 'tests' => 10;
 
 # Test data directory.
