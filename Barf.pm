@@ -29,7 +29,7 @@ sub barf {
 		close $ouf or err "Cannot close file '$file_or_handler'.";
 
 	# Handler
-	} elsif ($ref eq 'GLOB' || isa($file_or_handler, 'IO::Handler')) {
+	} elsif ($ref eq 'GLOB' || isa($file_or_handler, 'IO::Handle')) {
 		print {$file_or_handler} $content;
 	}
 
