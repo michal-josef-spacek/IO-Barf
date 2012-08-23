@@ -1,4 +1,4 @@
-0.03
+0.03 (August 23, 2012)
 - Fix doc example.
 - Fix tests.
 - Implement output to handler, IO::Handler.
