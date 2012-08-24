@@ -1,8 +1,5 @@
 TODO
 ====
-1. Predelat Perl6::Slurp v testech na klasicky pristup, protoze v perlu 5.8.0 
-   neni.
-Nevim, jestli plati, protoze jsem Perl6::Slurp predelal na File::Slurp.
 2. Pridat moznost vystupu jako >>
 4. Projit IO::Any, kde je podobna funkce IO::Any->spew();
 5. Hm, tak tenhle modul je asi minela, protoze rikaji ze se ma pouzivat
@@ -16,3 +13,9 @@ Applied
 =======
 3. Pridat moznost vystupu jako handler.
 OK [20120806] skim
+
+1. Predelat Perl6::Slurp v testech na klasicky pristup, protoze v perlu 5.8.0 
+   neni.
+Nevim, jestli plati, protoze jsem Perl6::Slurp predelal na File::Slurp.
+Melo by byt v pohode.
+OK [20120824] skim
