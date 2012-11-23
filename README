@@ -13,7 +13,7 @@ ERRORS
      barf():
              Cannot open file '%s'.
              Cannot close file '%s'.
-             Unsupported object '%s'.
+             Unsupported reference '%s'.
 
 EXAMPLE1
      # Pragmas.
@@ -34,7 +34,7 @@ EXAMPLE1
      barf($temp_file, $content);
 
      # Print tempory file.
-     system("cat $temp_file");
+     system "cat $temp_file";
 
      # Unlink temporary file.
      unlink $temp_file;
@@ -104,7 +104,7 @@ EXAMPLE3
      # IO::Barf    12268/s         92%         47%          --
 
 DEPENDENCIES
-    Error::Pure, Exporter, Readonly.
+    Error::Pure, Exporter, Readonly, Scalar::Util.
 
 SEE ALSO
     IO::Any, File::Slurp, Perl6::Slurp.
