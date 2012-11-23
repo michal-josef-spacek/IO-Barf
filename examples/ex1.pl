@@ -18,7 +18,7 @@ my $temp_file = File::Temp->new->filename;
 barf($temp_file, $content);
 
 # Print tempory file.
-system("cat $temp_file");
+system "cat $temp_file";
 
 # Unlink temporary file.
 unlink $temp_file;
