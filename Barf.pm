@@ -40,7 +40,7 @@ sub barf {
 
 	# Other.
 	} else {
-		err "Unsupported object '$ref'.";
+		err "Unsupported reference '$ref'.";
 	}
 
 	return;
@@ -78,7 +78,7 @@ IO::Barf - Barfing content to output file.
  barf():
          Cannot open file '%s'.
          Cannot close file '%s'.
-         Unsupported object '%s'.
+         Unsupported reference '%s'.
 
 =head1 EXAMPLE1
 

@@ -106,10 +106,12 @@ test3('ex3.txt');
 eval {
 	barf((bless {}, 'Foo::Bar'), 'FOOBAR');
 };
-is($EVAL_ERROR, "Unsupported object 'Foo::Bar'.\n", 'Unsupported object.');
+is($EVAL_ERROR, "Unsupported reference 'Foo::Bar'.\n",
+	'Unsupported reference to \'Foo::Bar\'.');
 
 # Test.
 eval {
 	barf([], 'FOOBAR');
 };
-is($EVAL_ERROR, "Unsupported object 'ARRAY'.\n", 'Unsupported object.');
+is($EVAL_ERROR, "Unsupported reference 'ARRAY'.\n",
+	'Unsupported reference to array.');
