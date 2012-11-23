@@ -13,6 +13,7 @@ name 'IO-Barf';
 requires 'Error::Pure' => 0.08;
 requires 'Exporter' => 0;
 requires 'Readonly' => 0;
+requires 'Scalar::Util' => 0;
 resources 'bugtracker' => 'https://rt.cpan.org/Public/Dist/Display.html'.
 	'?Name=IO-Barf';
 resources 'homepage' => 'https://github.com/tupinek/IO-Barf';

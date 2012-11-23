@@ -1,4 +1,5 @@
 0.04
+- Remove obsolete UNIVERSAL::isa().
 
 0.03 (August 23, 2012)
 - Fix doc example.

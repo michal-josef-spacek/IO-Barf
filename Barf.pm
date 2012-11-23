@@ -8,7 +8,7 @@ use warnings;
 # Modules.
 use Error::Pure qw(err);
 use Readonly;
-use UNIVERSAL qw(isa);
+use Scalar::Util qw(blessed);
 
 # Constants.
 Readonly::Array our @EXPORT => qw(barf);
@@ -33,7 +33,9 @@ sub barf {
 		print {$file_or_handler} $content;
 
 	# IO::Handle.
-	} elsif (isa($file_or_handler, 'IO::Handle')) {
+	} elsif (blessed($file_or_handler)
+		&& $file_or_handler->isa('IO::Handle')) {
+
 		$file_or_handler->print($content);
 
 	# Other.
@@ -173,7 +175,8 @@ IO::Barf - Barfing content to output file.
 
 L<Error::Pure>,
 L<Exporter>,
-L<Readonly>.
+L<Readonly>,
+L<Scalar::Util>.
 
 =head1 SEE ALSO
 

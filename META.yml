@@ -33,6 +33,7 @@ requires:
   Error::Pure: 0.08
   Exporter: 0
   Readonly: 0
+  Scalar::Util: 0
 resources:
   bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=IO-Barf
   homepage: https://github.com/tupinek/IO-Barf

@@ -11,7 +11,7 @@ use File::Slurp qw(slurp);
 use File::Temp qw(tempfile);
 use IO::File;
 use IO::Barf qw(barf);
-use Test::More 'tests' => 10;
+use Test::More 'tests' => 11;
 
 # Test data directory.
 my $test_dir = File::Object->new->up->dir('data');
@@ -107,3 +107,9 @@ eval {
 	barf((bless {}, 'Foo::Bar'), 'FOOBAR');
 };
 is($EVAL_ERROR, "Unsupported object 'Foo::Bar'.\n", 'Unsupported object.');
+
+# Test.
+eval {
+	barf([], 'FOOBAR');
+};
+is($EVAL_ERROR, "Unsupported object 'ARRAY'.\n", 'Unsupported object.');
