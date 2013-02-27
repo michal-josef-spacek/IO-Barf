@@ -26,6 +26,7 @@ test_requires 'File::Slurp' => 0;
 test_requires 'File::Temp' => 0;
 test_requires 'IO::File' => 0;
 test_requires 'Test::More' => 0;
+test_requires 'Test::NoWarnings' => 0;
 test_requires 'Test::Pod' => 0;
 test_requires 'Test::Pod::Coverage' => 0;
 tests_recursive;

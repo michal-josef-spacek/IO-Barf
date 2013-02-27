@@ -11,7 +11,8 @@ use File::Slurp qw(slurp);
 use File::Temp qw(tempfile);
 use IO::File;
 use IO::Barf qw(barf);
-use Test::More 'tests' => 11;
+use Test::More 'tests' => 12;
+use Test::NoWarnings;
 
 # Test data directory.
 my $test_dir = File::Object->new->up->dir('data');
