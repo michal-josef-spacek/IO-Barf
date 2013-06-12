@@ -1,5 +1,6 @@
 0.05
 - Add Test::NoWarnings to tests.
+- Rename CHANGES to Changes.
 
 0.04 (November 23, 2012)
 - Add missing messages to tests.
