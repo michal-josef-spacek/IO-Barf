@@ -5,7 +5,7 @@ author:
 build_requires:
   Digest: 0
   English: 0
-  Error::Pure: 0.08
+  Error::Pure: 0.11
   ExtUtils::MakeMaker: 6.36
   File::Object: 0.05
   File::Slurp: 0
@@ -31,7 +31,7 @@ no_index:
     - inc
     - t
 requires:
-  Error::Pure: 0.08
+  Error::Pure: 0.11
   Exporter: 0
   Readonly: 0
   Scalar::Util: 0
