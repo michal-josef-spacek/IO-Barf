@@ -1,5 +1,6 @@
 0.05
 - Add Test::NoWarnings to tests.
+- Add LICENSE file.
 - Add SIGNATURE file.
 - Rename CHANGES to Changes.
 
