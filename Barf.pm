@@ -14,7 +14,7 @@ use Scalar::Util qw(blessed);
 Readonly::Array our @EXPORT => qw(barf);
 
 # Version.
-our $VERSION = 0.05;
+our $VERSION = 0.06;
 
 # Barf content to file.
 sub barf {
@@ -200,6 +200,6 @@ BSD license.
 
 =head1 VERSION
 
-0.05
+0.06
 
 =cut
