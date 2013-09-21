@@ -1,23 +1,24 @@
 0.05
-- Add Test::NoWarnings to tests.
-- Add LICENSE file.
-- Add SIGNATURE file.
-- Rename CHANGES to Changes.
+ - Add Test::NoWarnings to tests.
+ - Add LICENSE file.
+ - Add SIGNATURE file.
+ - Rename CHANGES to Changes.
+ - Rewrite Changes file to CPAN::Changes::SPEC format.
 
-0.04 (November 23, 2012)
-- Add missing messages to tests.
-- Improve error message.
-- Remove obsolete UNIVERSAL::isa().
+0.04 2012-11-23
+ - Add missing messages to tests.
+ - Improve error message.
+ - Remove obsolete UNIVERSAL::isa().
 
-0.03 (August 23, 2012)
-- Fix doc example.
-- Fix tests.
-- Implement output to handler, IO::Handler.
-- Add error for unsupported objects to barf.
+0.03 2012-08-23
+ - Fix doc example.
+ - Fix tests.
+ - Implement output to handler, IO::Handler.
+ - Add error for unsupported objects to barf.
 
-0.02 (August 5, 2012)
-- Change exporting of barf() from explicit to implicit exporting.
-- Fix doc example. Add unlink of temporary file.
+0.02 2012-08-05
+ - Change exporting of barf() from explicit to implicit exporting.
+ - Fix doc example. Add unlink of temporary file.
 
-0.01 (August 5, 2012)
-- First version.
+0.01 2012-08-05
+ - First version.
