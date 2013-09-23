@@ -1,4 +1,5 @@
 0.06
+ - Add dependency for perl (based on Error::Pure).
 
 0.05 2013-09-21
  - Add Test::NoWarnings to tests.

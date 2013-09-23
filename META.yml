@@ -35,6 +35,7 @@ requires:
   Exporter: 0
   Readonly: 0
   Scalar::Util: 0
+  perl: 5.6.2
 resources:
   bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=IO-Barf
   homepage: https://github.com/tupinek/IO-Barf
