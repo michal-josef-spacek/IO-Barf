@@ -1,4 +1,5 @@
 0.07
+ - Add 'readme_from' directive to Makefile.PL.
 
 0.06 2013-11-07
  - Add dependency for perl (based on Error::Pure).

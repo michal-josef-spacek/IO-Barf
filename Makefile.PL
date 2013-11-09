@@ -10,6 +10,7 @@ abstract 'Barfing content to output file.';
 author 'Michal Špaček <skim@cpan.org>';
 license 'bsd';
 name 'IO-Barf';
+readme_from 'Barf.pm';
 requires 'Error::Pure' => 0.11;
 requires 'Exporter' => 0;
 requires 'Readonly' => 0;
