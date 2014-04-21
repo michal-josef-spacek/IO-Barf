@@ -151,6 +151,10 @@ IO::Barf - Barfing content to output file.
 
  # Benchmark (10s).
  cmpthese(-10, {
+         'File::Slurp' => sub {
+                 write_file($temp3, $data);
+                 unlink $temp3;
+         },
          'IO::Any' => sub {
                  IO::Any->spew($temp2, $data);
                  unlink $temp2;
@@ -158,10 +162,6 @@ IO::Barf - Barfing content to output file.
          'IO::Barf' => sub {
                  barf($temp1, $data);
                  unlink $temp1;
-         },
-         'File::Slurp' => sub {
-                 write_file($temp3, $data);
-                 unlink $temp3;
          },
  });
 
