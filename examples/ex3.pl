@@ -21,6 +21,10 @@ my $data = 'x' x 1000;
 
 # Benchmark (10s).
 cmpthese(-10, {
+        'File::Slurp' => sub {
+                write_file($temp3, $data);
+                unlink $temp3;
+        },
         'IO::Any' => sub {
                 IO::Any->spew($temp2, $data);
                 unlink $temp2;
@@ -28,10 +32,6 @@ cmpthese(-10, {
         'IO::Barf' => sub {
                 barf($temp1, $data);
                 unlink $temp1;
-        },
-        'File::Slurp' => sub {
-                write_file($temp3, $data);
-                unlink $temp3;
         },
 });
 
