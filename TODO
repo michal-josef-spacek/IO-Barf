@@ -7,7 +7,9 @@ TODO
    dopsat jako protejsek k Perl6::Slurp.
 6. Prozkoumat syswrite()
 7. Prozkoumat vystup v c
-8.
+8. Pres barf nejde ukladat binarni soubory.
+   Zkousel jsem to pres LWP::UserAgent a PDF.
+9.
 
 Applied
 =======
