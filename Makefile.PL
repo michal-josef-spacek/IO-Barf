@@ -7,7 +7,7 @@ use inc::Module::Install;
 
 # Definition.
 abstract 'Barfing content to output file.';
-author 'Michal Špaček <skim@cpan.org>';
+author 'Michal Spacek <skim@cpan.org>';
 license 'bsd';
 name 'IO-Barf';
 readme_from 'Barf.pm';
