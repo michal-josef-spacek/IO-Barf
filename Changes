@@ -1,6 +1,7 @@
 0.08
  - Update LICENSE AND COPYRIGHT section in doc.
  - Update Module::Install to 1.14 version.
+ - Update copyright years.
 
 0.07 2014-06-04T08:14:12+02:00
  - Add 'readme_from' directive to Makefile.PL.
