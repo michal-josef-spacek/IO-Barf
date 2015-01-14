@@ -6,9 +6,12 @@ TODO
    File::Slurp a jeho metoda pro zapis do souboru. Kazdopadne bych to mel asi
    dopsat jako protejsek k Perl6::Slurp.
 6. Prozkoumat syswrite()
+Kdyz nahradim "print {$ouf} $content;" "syswrite $ouf, $content;", tak to ma asi
+20% vykonu navrch.
 7. Prozkoumat vystup v c
 8. Pres barf nejde ukladat binarni soubory.
    Zkousel jsem to pres LWP::UserAgent a PDF.
+Prozkoumat se syswrite.
 9.
 
 Applied
