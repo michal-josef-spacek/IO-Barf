@@ -8,9 +8,16 @@ use inc::Module::Install;
 # Definition.
 abstract 'Barfing content to output file.';
 author 'Michal Spacek <skim@cpan.org>';
+author_requires 'English' => 0;
+author_requires 'File::Object' => 0.05;
+author_requires 'Test::More' => 0;
+author_requires 'Test::NoWarnings' => 0;
+author_requires 'Test::Pod' => 0;
+author_requires 'Test::Pod::Coverage' => 0;
 license 'bsd';
 name 'IO-Barf';
 readme_from 'Barf.pm';
+recursive_author_tests('xt');
 requires 'Error::Pure' => 0.11;
 requires 'Exporter' => 0;
 requires 'Readonly' => 0;
@@ -30,8 +37,6 @@ test_requires 'File::Temp' => 0;
 test_requires 'IO::File' => 0;
 test_requires 'Test::More' => 0;
 test_requires 'Test::NoWarnings' => 0;
-test_requires 'Test::Pod' => 0;
-test_requires 'Test::Pod::Coverage' => 0;
 tests_recursive;
 version '0.08';
 
