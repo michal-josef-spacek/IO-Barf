@@ -8,6 +8,7 @@ TODO
 6. Prozkoumat syswrite()
 Kdyz nahradim "print {$ouf} $content;" "syswrite $ouf, $content;", tak to ma asi
 20% vykonu navrch.
+Je v git stash.
 7. Prozkoumat vystup v c
 8. Pres barf nejde ukladat binarni soubory.
    Zkousel jsem to pres LWP::UserAgent a PDF.
