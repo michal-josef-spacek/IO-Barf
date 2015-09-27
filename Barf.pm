@@ -180,9 +180,21 @@ L<Scalar::Util>.
 
 =head1 SEE ALSO
 
-L<IO::Any>,
-L<File::Slurp>,
-L<Perl6::Slurp>.
+=over
+
+=item L<IO::Any>
+
+open anything
+
+=item L<File::Slurp>
+
+Simple and Efficient Reading/Writing/Modifying of Complete Files
+
+=item L<Perl6::Slurp>
+
+Implements the Perl 6 'slurp' built-in
+
+=back
 
 =head1 REPOSITORY
 

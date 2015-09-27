@@ -107,7 +107,14 @@ DEPENDENCIES
     Error::Pure, Exporter, Readonly, Scalar::Util.
 
 SEE ALSO
-    IO::Any, File::Slurp, Perl6::Slurp.
+    IO::Any
+        open anything
+
+    File::Slurp
+        Simple and Efficient Reading/Writing/Modifying of Complete Files
+
+    Perl6::Slurp
+        Implements the Perl 6 'slurp' built-in
 
 REPOSITORY
     <https://github.com/tupinek/IO-Barf>
