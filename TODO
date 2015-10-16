@@ -13,7 +13,8 @@ Je v git stash.
 8. Pres barf nejde ukladat binarni soubory.
    Zkousel jsem to pres LWP::UserAgent a PDF.
 Prozkoumat se syswrite.
-9.
+9. U Map::Tube::Nanjing mi pise warning u barf u chr.
+10.
 
 Applied
 =======
