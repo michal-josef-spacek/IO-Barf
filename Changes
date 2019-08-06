@@ -1,5 +1,6 @@
 0.08
  - Add another usage to benchamrk.
+ - Fix Makefile.PL which fails with no '.' in @INC.
  - Improve SEE ALSO section in doc.
  - Move author tests to xt/ directory.
  - Update LICENSE AND COPYRIGHT section in doc.
