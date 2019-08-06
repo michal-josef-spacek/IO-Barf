@@ -1,11 +1,9 @@
 package IO::Barf;
 
-# Pragmas.
 use base qw(Exporter);
 use strict;
 use warnings;
 
-# Modules.
 use Error::Pure qw(err);
 use Readonly;
 use Scalar::Util qw(blessed);
@@ -82,11 +80,9 @@ IO::Barf - Barfing content to output file.
 
 =head1 EXAMPLE1
 
- # Pragmas.
  use strict;
  use warnings;
 
- # Module.
  use File::Temp;
  use IO::Barf;
 
@@ -111,11 +107,9 @@ IO::Barf - Barfing content to output file.
 
 =head1 EXAMPLE2
 
- # Pragmas.
  use strict;
  use warnings;
 
- # Module.
  use IO::Barf;
 
  # Content.
@@ -130,11 +124,9 @@ IO::Barf - Barfing content to output file.
 
 =head1 EXAMPLE3
 
- # Pragmas.
  use strict;
  use warnings;
 
- # Module.
  use Benchmark qw(cmpthese);
  use IO::All;
  use IO::Any;
@@ -187,11 +179,9 @@ IO::Barf - Barfing content to output file.
 
 =head1 EXAMPLE4
 
- # Pragmas.
  use strict;
  use warnings;
 
- # Module.
  use Benchmark qw(cmpthese);
  use File::Temp;
 

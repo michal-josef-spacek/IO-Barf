@@ -1,10 +1,8 @@
 #!/usr/bin/env perl
 
-# Pragmas.
 use strict;
 use warnings;
 
-# Module.
 use Benchmark qw(cmpthese);
 use IO::All;
 use IO::Any;

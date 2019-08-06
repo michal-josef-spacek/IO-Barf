@@ -16,11 +16,9 @@ ERRORS
              Unsupported reference '%s'.
 
 EXAMPLE1
-     # Pragmas.
      use strict;
      use warnings;
 
-     # Module.
      use File::Temp;
      use IO::Barf;
 
@@ -44,11 +42,9 @@ EXAMPLE1
      # bar
 
 EXAMPLE2
-     # Pragmas.
      use strict;
      use warnings;
 
-     # Module.
      use IO::Barf;
 
      # Content.
@@ -62,11 +58,9 @@ EXAMPLE2
      # bar
 
 EXAMPLE3
-     # Pragmas.
      use strict;
      use warnings;
 
-     # Module.
      use Benchmark qw(cmpthese);
      use IO::All;
      use IO::Any;
@@ -118,11 +112,9 @@ EXAMPLE3
      # IO::Barf    35321/s       1000%        815%        437%         63%          --
 
 EXAMPLE4
-     # Pragmas.
      use strict;
      use warnings;
 
-     # Module.
      use Benchmark qw(cmpthese);
      use File::Temp;
 
