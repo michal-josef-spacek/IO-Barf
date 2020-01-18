@@ -4,7 +4,7 @@
  - Improve SEE ALSO section in doc.
  - Move author tests to xt/ directory.
  - Update LICENSE AND COPYRIGHT section in doc.
- - Update Module::Install to 1.18 version.
+ - Update Module::Install to 1.19 version.
  - Update copyright years.
 
 0.07 2014-06-04T08:14:12+02:00
