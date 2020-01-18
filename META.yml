@@ -1,7 +1,7 @@
 ---
 abstract: 'Barfing content to output file.'
 author:
-  - 'Michal Spacek <skim@cpan.org>'
+  - 'Michal Josef Spacek <skim@cpan.org>'
 build_requires:
   Digest: 0
   Digest::SHA: 0
