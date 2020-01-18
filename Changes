@@ -5,6 +5,7 @@
  - Move author tests to xt/ directory.
  - Update LICENSE AND COPYRIGHT section in doc.
  - Update author name.
+ - Update copyright years.
  - Update Module::Install to 1.19 version.
  - Update copyright years.
 
