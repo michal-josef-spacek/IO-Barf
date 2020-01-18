@@ -9,7 +9,7 @@ use File::Slurp qw(slurp);
 use File::Temp qw(tempfile);
 use IO::File;
 use IO::Barf qw(barf);
-use Test::More 'tests' => 12;
+use Test::More 'tests' => 13;
 use Test::NoWarnings;
 
 # Test data directory.
@@ -82,6 +82,9 @@ test1('ex2.txt', 'Test file #2.');
 
 # Test.
 test1('ex3.txt', 'Test file #3.');
+
+# Test.
+test1('ex4.bin', 'Test binary file.');
 
 # Test.
 test2('ex1.txt', 'Test handler #1.');

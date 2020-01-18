@@ -24,6 +24,7 @@ SIGNATURE
 t/data/ex1.txt
 t/data/ex2.txt
 t/data/ex3.txt
+t/data/ex4.bin
 t/IO-Barf/01-use.t
 t/IO-Barf/02-version.t
 t/IO-Barf/03-barf.t
