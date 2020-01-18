@@ -12,7 +12,7 @@ use Scalar::Util qw(blessed);
 Readonly::Array our @EXPORT => qw(barf);
 
 # Version.
-our $VERSION = 0.08;
+our $VERSION = 0.09;
 
 # Barf content to file.
 sub barf {
@@ -268,6 +268,6 @@ L<http://skim.cz>
 
 =head1 VERSION
 
-0.08
+0.09
 
 =cut
