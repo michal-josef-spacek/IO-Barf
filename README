@@ -174,7 +174,7 @@ SEE ALSO
         Implements the Perl 6 'slurp' built-in
 
 REPOSITORY
-    <https://github.com/tupinek/IO-Barf>
+    <https://github.com/michal-josef-spacek/IO-Barf>
 
 AUTHOR
     Michal Josef Špaček <mailto:skim@cpan.org>

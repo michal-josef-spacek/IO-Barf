@@ -253,7 +253,7 @@ Implements the Perl 6 'slurp' built-in
 
 =head1 REPOSITORY
 
-L<https://github.com/tupinek/IO-Barf>
+L<https://github.com/michal-josef-spacek/IO-Barf>
 
 =head1 AUTHOR
 
