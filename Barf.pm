@@ -11,7 +11,6 @@ use Scalar::Util qw(blessed);
 # Constants.
 Readonly::Array our @EXPORT => qw(barf);
 
-# Version.
 our $VERSION = 0.09;
 
 # Barf content to file.
