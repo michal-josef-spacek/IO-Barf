@@ -59,6 +59,7 @@ IO::Barf - Barfing content to output file.
 =head1 SYNOPSIS
 
  use IO::Barf qw(barf);
+
  barf($file_or_handler, 'CONTENT');
 
 =head1 SUBROUTINES

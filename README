@@ -3,6 +3,7 @@ NAME
 
 SYNOPSIS
      use IO::Barf qw(barf);
+
      barf($file_or_handler, 'CONTENT');
 
 SUBROUTINES
