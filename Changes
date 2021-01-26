@@ -1,4 +1,4 @@
-0.10
+0.10 2021-01-26T21:46:25+01:00
  - Fix bugtracker.
  - Rewrite doc to use =head2 in SUBROUTINES section.
  - Update copyright years.
