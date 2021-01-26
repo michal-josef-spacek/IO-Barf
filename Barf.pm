@@ -63,13 +63,13 @@ IO::Barf - Barfing content to output file.
 
 =head1 SUBROUTINES
 
-=over 8
+=head2 C<barf>
 
-=item C<barf($file_or_handler, $content)>
+ barf($file_or_handler, 'CONTENT');
 
- Barf content to file or handler.
+Barf content to file or handler.
 
-=back
+Returns undef.
 
 =head1 ERRORS
 

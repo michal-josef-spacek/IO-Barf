@@ -1,5 +1,6 @@
 0.10
  - Fix bugtracker.
+ - Rewrite doc to use =head2 in SUBROUTINES section.
  - Update copyright years.
 
 0.09 2020-03-23T17:25:17+01:00
