@@ -80,6 +80,8 @@ Returns undef.
 
 =head1 EXAMPLE1
 
+=for comment filename=barf_content_to_temp_file.pl
+
  use strict;
  use warnings;
 
@@ -107,6 +109,8 @@ Returns undef.
 
 =head1 EXAMPLE2
 
+=for comment filename=barf_content_to_stdout.pl
+
  use strict;
  use warnings;
 
@@ -123,6 +127,8 @@ Returns undef.
  # bar
 
 =head1 EXAMPLE3
+
+=for comment filename=barf_benchmark1.pl
 
  use strict;
  use warnings;
@@ -178,6 +184,8 @@ Returns undef.
  # IO::Barf    35321/s       1000%        815%        437%         63%          --
 
 =head1 EXAMPLE4
+
+=for comment filename=barf_benchmark2.pl
 
  use strict;
  use warnings;
