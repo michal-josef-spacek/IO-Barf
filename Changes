@@ -1,4 +1,5 @@
 0.12
+ - Add File::Raw to second benchmark and retest.
  - Update copyright years.
 
 0.11 2024-11-26T11:06:18+01:00
