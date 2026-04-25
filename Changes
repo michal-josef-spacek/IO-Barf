@@ -1,4 +1,4 @@
-0.12
+0.12 2026-04-25T11:49:34+02:00
  - Add File::Raw to SEE ALSO section in doc.
  - Add File::Raw to first benchmark and retest.
  - Add File::Raw to second benchmark and retest.
