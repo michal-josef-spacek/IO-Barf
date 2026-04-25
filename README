@@ -176,6 +176,9 @@ DEPENDENCIES
     Error::Pure, Exporter, Readonly, Scalar::Util.
 
 SEE ALSO
+    File::Raw
+        Fast IO operations using direct system calls
+
     File::Slurp
         Simple and Efficient Reading/Writing/Modifying of Complete Files
 

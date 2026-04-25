@@ -253,6 +253,10 @@ L<Scalar::Util>.
 
 =over
 
+=item L<File::Raw>
+
+Fast IO operations using direct system calls
+
 =item L<File::Slurp>
 
 Simple and Efficient Reading/Writing/Modifying of Complete Files
