@@ -176,11 +176,11 @@ DEPENDENCIES
     Error::Pure, Exporter, Readonly, Scalar::Util.
 
 SEE ALSO
-    IO::Any
-        open anything
-
     File::Slurp
         Simple and Efficient Reading/Writing/Modifying of Complete Files
+
+    IO::Any
+        open anything
 
     Perl6::Slurp
         Implements the Perl 6 'slurp' built-in

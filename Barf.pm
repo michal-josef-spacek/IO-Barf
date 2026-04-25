@@ -253,13 +253,13 @@ L<Scalar::Util>.
 
 =over
 
-=item L<IO::Any>
-
-open anything
-
 =item L<File::Slurp>
 
 Simple and Efficient Reading/Writing/Modifying of Complete Files
+
+=item L<IO::Any>
+
+open anything
 
 =item L<Perl6::Slurp>
 
