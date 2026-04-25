@@ -1,5 +1,6 @@
 0.12
  - Add File::Raw to SEE ALSO section in doc.
+ - Add File::Raw to first benchmark and retest.
  - Add File::Raw to second benchmark and retest.
  - Sort SEE ALSO section modules.
  - Update copyright years.
